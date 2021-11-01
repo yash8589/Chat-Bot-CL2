@@ -9,6 +9,7 @@ import tensorflow
 import random
 import json
 
+# Preprocessing of data
 with open("intents.json") as file:
     data = json.load(file)
 
@@ -45,9 +46,9 @@ for x, doc in enumerate(docs_x):
     wrds = [stemmer.stem(w.lower()) for w in doc]
 
     for w in words:
-        if w in wrds:
+        if w in wrds:  # word exists in the current pattern
             bag.append(1)
-        else:
+        else:  # word isn't here
             bag.append(0)
 
     output_row = out_empty[:]
@@ -58,3 +59,28 @@ for x, doc in enumerate(docs_x):
 
 training = numpy.array(training)
 output = numpy.array(output)
+
+# Tensorflow part
+from tensorflow.python.framework import ops
+
+ops.reset_default_graph()
+# tensorflow.reset_default_graph(
+# )  # reset tensorflow to remove all previous data
+
+net = tflearn.input_data(shape=[None, len(
+    training[0])])  # Define input shape that we are expecting from our model
+net = tflearn.fully_connected(
+    net, 8
+)  # add a fully connected layer to our neural network with 8 neurons which starts at the previous input data (Hidden Layer)
+net = tflearn.fully_connected(net, 8)
+net = tflearn.fully_connected(
+    net, len(output[0]), activation="softmax"
+)  # get probability of each neuron in the layer using softnmax
+net = tflearn.regression(net)
+
+model = tflearn.DNN(net)  # Type of Neural network
+
+model.fit(
+    training, output, n_epoch=1000, batch_size=8, show_metric=True
+)  # number of epoch is the amount of times it is going to see the same data
+model.save("model.tflearn")
