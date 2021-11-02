@@ -89,6 +89,11 @@
          "patterns":["Tell me a joke","joke","Make me laugh","Can u make me laugh?"],
          "responses":["Did you hear the one about the mountain goats in the andes? It was \"ba a a a a a d\"."],
          "context":[""]
+        },
+        {"tag":["computer"],
+         "patterns":[],
+         "responses":[],
+         "context":[""]
         }
    ]
 }
