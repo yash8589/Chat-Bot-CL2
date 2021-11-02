@@ -16,6 +16,7 @@ with open("intents.json") as file:
     data = json.load(file)
 
 try:
+
     with open("data.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
 except:
@@ -113,7 +114,7 @@ def bag_of_words(s, words):
 
 
 def chat():
-    print("Start talking with the bot (type quit to stop)!")
+    print("\nStart talking with the bot (type quit to stop)!")
     while True:
         inp = input("You: ")
         if inp.lower() == "quit":
