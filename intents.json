@@ -91,8 +91,18 @@
          "context":[""]
         },
         {"tag":["computer"],
-         "patterns":[],
-         "responses":[],
+         "patterns":["What is a computer?"],
+         "responses":["A computer is an electronic device which takes information in digital form and performs a series of operations based on predetermined instructions to give some output.","A device which maps one set of numbers onto another set of numbers.","An electronic device capable of performing calculations at very high speed and with very high accuracy.","The thing you're using to talk to me is a computer."],
+         "context":[""]
+        },
+        {"tag":["microprocessor"],
+         "patterns":["What is a microprocessor?"],
+         "responses":["An integrated circuit that implements the functions of a central processing unit of a computer.","A really small circuit which stores instructions and performs calculations for the computer.","The heart of the computer, to put it simply.","The brain of a computer, to put it simply.","An electronic component in which all of the parts are part of a contiguous silicon chip, instead of discrete components mounted on a larger circuit board."],
+         "context":[""] 
+        },
+        {"tag":["OS"],
+         "patterns":["Which is better Windows or macOS?"],
+         "responses":["It depends on which machine you're using to talk to me!","I'd prefer to not hurt your feelings.","Linux, always Linux!","What are you trying to accomplish.  The OS should support your goals."],
          "context":[""]
         }
    ]
