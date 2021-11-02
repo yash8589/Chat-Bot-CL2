@@ -101,7 +101,7 @@
          "context":[""] 
         },
         {"tag":["OS"],
-         "patterns":["Which is better Windows or macOS?"],
+         "patterns":["Which is better Windows or macOS?","Which OS would you recommend?", "What OS should I use?","Should I use Linux or Windows?"],
          "responses":["It depends on which machine you're using to talk to me!","I'd prefer to not hurt your feelings.","Linux, always Linux!","What are you trying to accomplish.  The OS should support your goals."],
          "context":[""]
         }
