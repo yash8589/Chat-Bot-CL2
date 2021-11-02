@@ -68,8 +68,7 @@ with open("data.pickle", "wb") as f:
 from tensorflow.python.framework import ops
 
 ops.reset_default_graph()
-# tensorflow.reset_default_graph(
-# )  # reset tensorflow to remove all previous data
+# reset tensorflow to remove all previous data
 
 net = tflearn.input_data(shape=[None, len(
     training[0])])  # Define input shape that we are expecting from our model
