@@ -91,8 +91,18 @@
          "context":[""]
         },
 	{"tags" : "trivia_matches",
-	"patterns": []
+	"patterns": ["Tell me some facts about tennis", "What's today's trivia"],
+	"responses": [],
+	"context": [""] 
 	},
-	{"tags" : "trivia_players"
+	{"tags" : "trivia_players",
+	 "patterns": ["Enlighten me!", "Best Players", "Women Players"],
+	"responses": [ "Maximum of 3 sets are played in women’s game", "", "Women’s tennis was first included in the Olympics in 1900",],
+	"context": [""] 
 	},
+	{"tags" : "penguin",
+	 "patterns" : ["Kowalski, say something smart"],
+	 "responses" : ["Before Boris Becker and Steffi Graf, Cilly Aussem (1931) was the only German to win a Wimbledon Singles title", "Elizabeth Ryan won a total of 19 Wibledon Doubles Title", "Pancho Gonzales earned the nickname 'Big Pancho'", "Maureen Conolly was the first woman to win all four Grand Slam tournaments during the same calendar year"],
+	 "context" : [""]
+	}
 ]}
