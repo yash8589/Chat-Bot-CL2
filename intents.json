@@ -89,5 +89,10 @@
          "patterns":["Tell me a joke","joke","Make me laugh","Can u make me laugh?"],
          "responses":["Did you hear the one about the mountain goats in the andes? It was \"ba a a a a a d\"," ,"I went to buy some camo pants but couldn’t find any", "I failed math so many times at school, I can’t even count.","It takes a lot of balls to golf the way I do.","Don’t you hate it when someone answers their own questions? I do.","When life gives you melons, you might be dyslexic.","I know they say that money talks, but all mine says is ‘Goodbye.’","Most people are shocked when they find out how bad I am as an electrician.","Never trust atoms; they make up everything.","My therapist says I have a preoccupation for revenge. We’ll see about that.","Two fish are in a tank. One says, ‘How do you drive this thing?’"],
          "context":[""]
-        }
+        },
+	{"tags" : "trivia_matches",
+	"patterns": []
+	},
+	{"tags" : "trivia_players"
+	},
 ]}
