@@ -96,6 +96,6 @@
     },
     {"tag": "funwa",
      "patterns":["balls"],
-     "responses":["give yours first"],
+     "responses":["give yours first"]
     }
 ]}
