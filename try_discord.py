@@ -147,4 +147,4 @@ async def on_message(message):
         await message.channel.send(msg)
 
 
-client.run("OTE2MjQ0NDU4MjkzNTkyMDY2.YanVJQ.1-bFQNZ-NLzwlnCfuSJ7yjNxhWg")
+client.run("")  # put ur discord token inn ""
